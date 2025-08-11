@@ -31,13 +31,21 @@ export default function ContactSection() {
           </motion.div>
         </div>
         <div className="flex justify-center">
-          <Button
-            size="lg"
-            className="bg-button-custom hover:bg-button-custom/90 text-white font-body sm:w-auto"
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-4 md:mb-6"
           >
-            {t("contact.cta")}
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+            <Button
+              size="lg"
+              className="bg-button-custom hover:bg-button-custom/90 text-white font-body sm:w-auto"
+            >
+              {t("contact.cta")}
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </motion.div>
         </div>
       </div>
     </section>

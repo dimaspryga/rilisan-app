@@ -147,9 +147,9 @@ const translations = {
     "footer.company": "Perusahaan",
     "footer.contact": "Kontak",
     "footer.about": "Tentang Kami",
-    "footer.team": "Tim",
-    "footer.career": "Karir",
-    "footer.blog": "Blog",
+    "footer.warranty": "Ketentuan Garansi",
+    "footer.terms": "Persyaratan Layanan",
+    "footer.privacy": "Kebijakan Privasi",
     "footer.rights": "Hak Cipta Dilindungi",
 
     // Scroll to top
@@ -291,9 +291,9 @@ const translations = {
     "footer.company": "Company",
     "footer.contact": "Contact",
     "footer.about": "About Us",
-    "footer.team": "Team",
-    "footer.career": "Career",
-    "footer.blog": "Blog",
+    "footer.warranty": "Warranty Terms",
+    "footer.terms": "Terms of Service",
+    "footer.privacy": "Privacy Policy",
     "footer.rights": "All Rights Reserved",
 
     // Scroll to top

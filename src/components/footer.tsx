@@ -116,13 +116,13 @@ export default function Footer() {
                 {t("footer.about")}
               </li>
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                {t("footer.team")}
+                {t("footer.warranty")}
               </li>
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                {t("footer.career")}
+                {t("footer.terms")}
               </li>
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                {t("footer.blog")}
+                {t("footer.privacy")}
               </li>
             </ul>
           </motion.div>
@@ -179,12 +179,12 @@ export default function Footer() {
               >
                 Terms of Service
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="hover:text-primary-custom transition-colors"
               >
                 Cookie Policy
-              </a>
+              </a> */}
             </div>
           </div>
         </motion.div>

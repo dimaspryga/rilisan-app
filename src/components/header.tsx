@@ -43,7 +43,7 @@ export default function Header() {
   // ];
 
   const serviceItems = [
-    { key: "services.pressRelease", href: "#" },
+    { key: "services.pressRelease", href: "/services/press-release" },
     { key: "services.mediaRelations", href: "#" },
     { key: "services.digitalMarketing", href: "#" },
     { key: "services.contentCreation", href: "#" },
@@ -67,7 +67,7 @@ export default function Header() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border/50"
