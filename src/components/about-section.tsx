@@ -33,7 +33,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-20">
+    <section id="about" className="w-full py-16 md:py-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Content */}

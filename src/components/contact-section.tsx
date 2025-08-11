@@ -11,7 +11,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-16 md:py-20 bg-gradient-to-br from-primary-custom/5 via-transparent to-button-custom/5"
+      className="py-16 w-full md:py-20 bg-gradient-to-br from-primary-custom/5 via-transparent to-button-custom/5"
     >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">

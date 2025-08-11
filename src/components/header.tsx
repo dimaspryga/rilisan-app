@@ -74,7 +74,7 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container w-full mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <motion.div

@@ -11,7 +11,7 @@ export default function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0 lg:pt-16">
+    <section className="min-h-screen w-full flex items-center justify-center relative overflow-hidden pt-20 md:pt-0 lg:pt-16">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-custom/5 via-transparent to-button-custom/5" />
       <div className="absolute top-10 md:top-20 left-5 md:left-10 w-48 md:w-72 h-48 md:h-72 bg-primary-custom/10 rounded-full blur-3xl" />
