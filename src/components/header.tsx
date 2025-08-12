@@ -32,21 +32,14 @@ export default function Header() {
     { key: "nav.home", href: "/", type: "link" },
     { key: "nav.services", href: "#services", type: "dropdown" },
     { key: "nav.company", href: "#company", type: "dropdown" },
-    { key: "nav.contact", href: "#", type: "link" },
+    { key: "nav.contact", href: "/contact", type: "link" },
   ];
-
-  // const serviceItems = [
-  //   { key: "services.pressRelease", href: "/services/press-release" },
-  //   { key: "services.mediaRelations", href: "/services/media-relations" },
-  //   { key: "services.digitalMarketing", href: "/services/digital-marketing" },
-  //   { key: "services.contentCreation", href: "/services/content-creation" },
-  // ];
 
   const serviceItems = [
     { key: "services.pressRelease", href: "/services/press-release" },
-    { key: "services.mediaRelations", href: "#" },
-    { key: "services.digitalMarketing", href: "#" },
-    { key: "services.contentCreation", href: "#" },
+    { key: "services.mediaRelations", href: "/services/media-relations" },
+    { key: "services.digitalMarketing", href: "/services/digital-marketing" },
+    { key: "services.contentCreation", href: "/services/content-creation" },
   ];
 
   // const companyItems = [
