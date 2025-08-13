@@ -163,7 +163,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 font-body text-center md:text-left">
-              &copy; 2024 Rilisan.com. {t("footer.rights")}.
+              &copy; 2025 Rilisan.com. {t("footer.rights")}.
             </p>
             <div className="flex space-x-6 text-sm text-gray-400 font-body">
               <a
