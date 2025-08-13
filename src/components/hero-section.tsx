@@ -1,17 +1,35 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Button } from "@/src/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import { Button } from "./ui/button";
-import { useLanguage } from "./language-provider";
+import { useLanguage } from "@/src/components/language-provider";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function HeroSection() {
   const { t } = useLanguage();
 
+  const scrollToServices = () => {
+    const servicesSection = document.querySelector("#services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const openWhatsApp = () => {
+    const phoneNumber = "6281225052380"; // Replace with actual WhatsApp number
+    const message = encodeURIComponent(
+      "Halo, saya tertarik dengan layanan publikasi media Rilisan.com. Bisakah saya mendapatkan informasi lebih lanjut?"
+    );
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
-    <section className="min-h-screen w-full flex items-center justify-center relative overflow-hidden pt-20 md:pt-0 lg:pt-16">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-5 md:pt-20"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-custom/5 via-transparent to-button-custom/5" />
       <div className="absolute top-10 md:top-20 left-5 md:left-10 w-48 md:w-72 h-48 md:h-72 bg-primary-custom/10 rounded-full blur-3xl" />
@@ -61,21 +79,21 @@ export default function HeroSection() {
             >
               <Button
                 size="lg"
-                className="bg-button-custom hover:bg-button-custom/90 text-white font-body group w-full sm:w-auto"
+                onClick={openWhatsApp}
+                className="bg-button-custom hover:bg-button-custom/90 text-white font-body group w-full sm:w-auto cursor-pointer"
               >
                 {t("hero.cta")}
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Link href="/contact" passHref>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-primary-custom text-primary-custom hover:bg-primary-custom hover:text-white font-body group bg-transparent w-full sm:w-auto"
-                >
-                  <Play className="mr-2 h-4 w-4" />
-                  {t("hero.contact")}
-                </Button>
-              </Link>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={scrollToServices}
+                className="border-primary-custom text-primary-custom hover:bg-primary-custom hover:text-white font-body group bg-transparent w-full sm:w-auto cursor-pointer"
+              >
+                <Play className="mr-2 h-4 w-4" />
+                {t("hero.learn")}
+              </Button>
             </motion.div>
           </motion.div>
 
@@ -86,15 +104,51 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative mt-8 lg:mt-0"
           >
-            <div className="relative w-full h-64 sm:h-80 md:h-96 bg-gradient-to-br from-primary-custom to-button-custom rounded-2xl overflow-hidden mx-auto max-w-md lg:max-w-none shadow-xl">
+            <div className="relative w-full h-64 sm:h-80 md:h-96 shadow-2xl bg-gradient-to-br from-primary-custom to-button-custom rounded-2xl overflow-hidden mx-auto max-w-md lg:max-w-none">
               <div className="absolute inset-0 bg-black/20" />
               <Image
-                src="/assets/hero.png"
+                src="./assets/hero-section/hero-1.png"
                 alt="Hero Image"
-                fill
+                layout="fill"
+                objectFit="cover"
                 className="object-cover"
               />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center text-slate-500/80 px-4">
+                  <h3 className="text-lg md:text-xl font-bold font-heading">
+                    Rilisan.com
+                  </h3>
+                  <p className="text-slate-500/80 font-body text-sm md:text-base">
+                    Media Publication Service
+                  </p>
+                </div>
+              </div>
             </div>
+
+            {/* Floating Elements */}
+            {/* <motion.div
+              animate={{ y: [-10, 10, -10] }}
+              transition={{
+                duration: 3,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+              className="absolute -top-2 md:-top-4 -right-2 md:-right-4 w-12 md:w-16 h-12 md:h-16 bg-transparent rounded-full flex items-center justify-center text-white text-lg md:text-xl"
+            >
+              📰
+            </motion.div>
+            <motion.div
+              animate={{ y: [10, -10, 10] }}
+              transition={{
+                duration: 3,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+                delay: 1.5,
+              }}
+              className="absolute -bottom-2 md:-bottom-4 -left-2 md:-left-4 w-10 md:w-12 h-10 md:h-12 bg-transparent rounded-full flex items-center justify-center text-white text-sm md:text-base"
+            >
+              📺
+            </motion.div> */}
           </motion.div>
         </div>
       </div>

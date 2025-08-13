@@ -16,99 +16,50 @@ const translations = {
     // Navigation
     "nav.home": "Beranda",
     "nav.services": "Layanan",
-    "nav.company": "Perusahaan",
+    "nav.about": "Tentang",
     "nav.contact": "Kontak",
 
-    "services.pressRelease": "Press Release",
-    "services.mediaRelations": "Media Relations",
-    "services.digitalMarketing": "Digital Marketing",
-    "services.contentCreation": "Content Creation",
+    // News Examples Section
+    "news.title": "Contoh Pemberitaan Klien Rilisan",
+    "news.subtitle":
+      "Lihat bagaimana kami membantu klien mendapatkan eksposur media yang maksimal",
+    "news.loadMore": "Lihat Selengkapnya",
 
-    "company.about": "Tentang Kami",
-    "company.warranty": "Ketentuan Garansi",
-    "company.terms": "Persyaratan Layanan",
-    "company.privacy": "Kebijakan Privasi",
+    // Media Partners Section
+    "partners.title": "Media Partner Kami",
+    "partners.subtitle":
+      "Dipercaya oleh berbagai media terkemuka untuk distribusi berita berkualitas",
 
-    "breadcrumb.home": "Beranda",
-    "breadcrumb.services": "Layanan",
-    "breadcrumb.company": "Perusahaan",
+    // Trusted Brands Section
+    "brands.title": "Rilisan Dipercaya Oleh Brand Ternama",
+    "brands.subtitle":
+      "Rilisan.com telah digunakan oleh berbagai klien, mulai dari personal, organisasi, perusahaan nasional, hingga perusahaan multinasional.",
 
-    "service.pressRelease.title": "Press Release",
-    "service.pressRelease.subtitle":
-      "Distribusi press release profesional ke media nasional dan internasional",
-    "service.pressRelease.description":
-      "Layanan press release kami membantu Anda menyebarkan berita penting tentang perusahaan, produk, atau layanan Anda ke berbagai media partner. Dengan jaringan media yang luas dan pengalaman bertahun-tahun, kami memastikan pesan Anda sampai ke target audience yang tepat.",
-    "service.pressRelease.features.title": "Fitur Layanan",
-    "service.pressRelease.feature1": "Distribusi ke 200+ media nasional",
-    "service.pressRelease.feature2": "Penulisan press release profesional",
-    "service.pressRelease.feature3": "Laporan distribusi lengkap",
-    "service.pressRelease.feature4": "Follow-up dengan media partner",
-
-    "service.mediaRelations.title": "Media Relations",
-    "service.mediaRelations.subtitle":
-      "Membangun hubungan strategis dengan media partner untuk eksposur maksimal",
-    "service.mediaRelations.description":
-      "Layanan media relations kami fokus pada membangun dan memelihara hubungan jangka panjang dengan jurnalis dan media partner. Kami membantu Anda mendapatkan liputan media yang berkualitas dan berkelanjutan.",
-    "service.mediaRelations.features.title": "Fitur Layanan",
-    "service.mediaRelations.feature1": "Database media partner 500+",
-    "service.mediaRelations.feature2": "Media monitoring & analisis",
-    "service.mediaRelations.feature3": "Press conference management",
-    "service.mediaRelations.feature4": "Crisis communication support",
-
-    "service.digitalMarketing.title": "Digital Marketing",
-    "service.digitalMarketing.subtitle":
-      "Kampanye digital terintegrasi untuk meningkatkan brand awareness",
-    "service.digitalMarketing.description":
-      "Layanan digital marketing kami menggabungkan strategi konten, media sosial, dan publikasi online untuk menciptakan kampanye yang efektif. Kami membantu brand Anda hadir kuat di dunia digital.",
-    "service.digitalMarketing.features.title": "Fitur Layanan",
-    "service.digitalMarketing.feature1": "Social media management",
-    "service.digitalMarketing.feature2": "Content marketing strategy",
-    "service.digitalMarketing.feature3": "Influencer collaboration",
-    "service.digitalMarketing.feature4": "Performance analytics",
-
-    "service.contentCreation.title": "Content Creation",
-    "service.contentCreation.subtitle":
-      "Pembuatan konten berkualitas tinggi untuk berbagai platform media",
-    "service.contentCreation.description":
-      "Tim kreatif kami menghasilkan konten yang engaging dan relevan untuk berbagai kebutuhan publikasi Anda. Dari artikel, infografis, hingga video content, kami pastikan setiap konten selaras dengan brand identity Anda.",
-    "service.contentCreation.features.title": "Fitur Layanan",
-    "service.contentCreation.feature1": "Article & blog writing",
-    "service.contentCreation.feature2": "Infographic design",
-    "service.contentCreation.feature3": "Video content production",
-    "service.contentCreation.feature4": "Brand storytelling",
-
-    "pricing.title": "Paket Layanan",
-    "pricing.subtitle": "Pilih paket yang sesuai dengan kebutuhan bisnis Anda",
-    "pricing.basic": "Basic",
-    "pricing.professional": "Professional",
-    "pricing.enterprise": "Enterprise",
-    "pricing.month": "/bulan",
-    "pricing.contact": "Hubungi Kami",
-    "pricing.getStarted": "Mulai Sekarang",
-    "pricing.popular": "Terpopuler",
+    // Testimonials Section
+    "testimonials.title": "Apa Yang Mereka Katakan Tentang Rilisan?",
+    "testimonials.subtitle":
+      "Dengarkan pengalaman klien yang telah merasakan layanan terbaik kami",
 
     // Hero Section
-    "hero.title": "Publikasi Media Profesional untuk Brand Anda",
+    "hero.title": "Bikin Usaha Kamu Eksis Di Media Nasional",
     "hero.subtitle":
-      "Tingkatkan visibilitas dan kredibilitas bisnis Anda dengan layanan publikasi media terpercaya dari Rilisan.com",
-    "hero.cta": "Mulai Sekarang",
-    "hero.contact": "Kontak Kami",
+      "Dengan RILISAN kamu bisa publikasikan berita bisnismu cepat, terpercaya, dan tayang di media nasional ternama. Dari penulisan hingga tayang, semua kami urus!",
+    "hero.cta": "Pesan Sekarang!",
+    "hero.learn": "Pelajari Lebih Lanjut",
 
     // Services
-    "services.title": "Layanan Kami",
+    "services.title": "Layanan Rilisan",
     "services.subtitle":
       "Solusi publikasi media yang komprehensif untuk kebutuhan bisnis Anda",
-    "services.press.title": "Press Release",
-    "services.press.desc":
-      "Distribusi press release ke media nasional dan internasional",
-    "services.media.title": "Media Relations",
-    "services.media.desc": "Membangun hubungan strategis dengan media partner",
-    "services.digital.title": "Digital Marketing",
-    "services.digital.desc":
-      "Kampanye digital terintegrasi untuk maksimal exposure",
-    "services.content.title": "Content Creation",
-    "services.content.desc":
-      "Pembuatan konten berkualitas tinggi untuk berbagai platform",
+    "services.article.title": "Iklan Artikel",
+    "services.article.desc":
+      "Iklan dalam bentuk artikel berita yang tayang pada website media nasional. Bikin usahamu eksis dan mudah ditemukan di mesin pencarian Google",
+    "services.banner.title": "Digital Banner",
+    "services.banner.desc":
+      "Iklan dalam bentuk digital banner yang tayang pada media nasional. Tambah terus awareness usahamu dengan banner ke jutaan audiens.",
+    "services.video.title": "Video on Warranty",
+    "services.video.desc":
+      "Eksis di Youtube media nasional kayak brand besar! Iklan usahamu dijahit dan ditayangkan di video channel Youtube grup media nasional. UMKM juga bisa!",
 
     // Stats
     "stats.title": "Pencapaian Kami",
@@ -120,26 +71,43 @@ const translations = {
     "stats.experience": "Tahun Pengalaman",
 
     // About
-    "about.title": "Mengapa Memilih Rilisan.com?",
+    "about.title": "Alasan Pilih RILISAN",
     "about.subtitle":
       "Kami adalah partner terpercaya untuk semua kebutuhan publikasi media Anda",
-    "about.experience.title": "Pengalaman Terpercaya",
-    "about.experience.desc": "Lebih dari 5 tahun melayani berbagai industri",
-    "about.network.title": "Jaringan Media Luas",
-    "about.network.desc":
-      "Akses ke 500+ media partner nasional dan internasional",
-    "about.results.title": "Hasil Terukur",
-    "about.results.desc": "ROI yang jelas dengan laporan komprehensif",
+    "about.point1.title": "Bisa Mulai dari 1 Media Saja",
+    "about.point1.desc": "Gak harus langsung paket besar",
+    "about.point2.title": "Akses ke Puluhan Media Nasional Ternama",
+    "about.point2.desc":
+      "Dari Kompas, Tribun, hingga media niche industri—kami punya koneksi dan sistem publikasi langsung.",
+    "about.point3.title": "Semua Event Bisa Dihandle",
+    "about.point3.desc":
+      "Punya event? Launching fitur baru? Peluncuran produk? Atau mau urus centang biru biar brand makin dipercaya publik? Bisa semua!",
+    "about.point4.title": "Proses Cepat",
+    "about.point4.desc":
+      "Proses tayang bisa dalam hitungan hari. Kamu dapat bukti tayang resmi & bisa dipantau.",
+    "about.point5.title": "Jejak Digital Lebih Kuat",
+    "about.point5.desc":
+      "Bisa Buat Jejak Digital Bisnismu Lebih Kuat. Bikin brand-mu lebih mudah ditemukan dan dipercaya calon klien.",
 
     // Contact
-    "contact.title": "Siap Meningkatkan Visibilitas Brand Anda?",
-    "contact.subtitle": "Hubungi kami sekarang untuk konsultasi gratis",
-    "contact.cta": "Hubungi Kami",
+    "contact.title": "Siap Eksis di Media Nasional?",
+    "contact.subtitle":
+      "Konsultasi gratis dengan tim RILISAN dan dapatkan strategi publikasi media yang tepat untuk UMKM Anda",
+    "contact.cta": "Hubungi Kami Sekarang",
     "contact.email": "Email",
     "contact.phone": "Telepon",
     "contact.address": "Alamat",
-    "contact.hero.title": "Hubungi Kami",
-    "contact.hero.subtitle": "Konsultasi gratis untuk kebutuhan publikasi Anda",
+
+    "contact.questions.title": "Pertanyaan Umum",
+    "contact.questions.one": "Berapa lama proses publikasi?",
+    "contact.questions.descone":
+      "Proses publikasi biasanya memakan waktu 3-7 hari kerja tergantung paket yang dipilih.",
+    "contact.questions.two": "Apakah ada garansi?",
+    "contact.questions.desctwo":
+      "Ya, kami memberikan garansi sesuai dengan ketentuan yang berlaku.",
+    "contact.questions.three": "Bagaimana cara pembayaran?",
+    "contact.questions.descthree":
+      "Pembayaran dapat dilakukan melalui transfer bank atau payment gateway yang tersedia.",
 
     // Footer
     "footer.tagline": "Partner terpercaya untuk publikasi media profesional",
@@ -147,9 +115,9 @@ const translations = {
     "footer.company": "Perusahaan",
     "footer.contact": "Kontak",
     "footer.about": "Tentang Kami",
-    "footer.warranty": "Ketentuan Garansi",
-    "footer.terms": "Persyaratan Layanan",
-    "footer.privacy": "Kebijakan Privasi",
+    "footer.team": "Tim",
+    "footer.career": "Karir",
+    "footer.blog": "Blog",
     "footer.rights": "Hak Cipta Dilindungi",
 
     // Scroll to top
@@ -159,131 +127,99 @@ const translations = {
     // Navigation
     "nav.home": "Home",
     "nav.services": "Services",
-    "nav.company": "Company",
+    "nav.about": "About",
     "nav.contact": "Contact",
 
-    "services.pressRelease": "Press Release",
-    "services.mediaRelations": "Media Relations",
-    "services.digitalMarketing": "Digital Marketing",
-    "services.contentCreation": "Content Creation",
+    // News Examples Section
+    "news.title": "Client News Release Examples",
+    "news.subtitle": "See how we help clients gain maximum media exposure",
+    "news.loadMore": "See More",
 
-    "company.about": "About Us",
-    "company.warranty": "Warranty Terms",
-    "company.terms": "Terms of Service",
-    "company.privacy": "Privacy Policy",
+    // Media Partners Section
+    "partners.title": "Our Media Partners",
+    "partners.subtitle":
+      "Trusted by various leading media outlets for quality news distribution",
 
-    "breadcrumb.home": "Home",
-    "breadcrumb.services": "Services",
-    "breadcrumb.company": "Company",
+    // Trusted Brands Section
+    "brands.title": "Releases Trusted by Leading Brands",
+    "brands.subtitle":
+      "Rilisan.com has been used by a variety of clients, from individuals and organizations to national companies and multinational corporations.",
 
-    "service.pressRelease.title": "Press Release",
-    "service.pressRelease.subtitle":
-      "Professional press release distribution to national and international media",
-    "service.pressRelease.description":
-      "Our press release service helps you spread important news about your company, products, or services to various media partners. With our extensive media network and years of experience, we ensure your message reaches the right target audience.",
-    "service.pressRelease.features.title": "Service Features",
-    "service.pressRelease.feature1": "Distribution to 200+ national media",
-    "service.pressRelease.feature2": "Professional press release writing",
-    "service.pressRelease.feature3": "Complete distribution reports",
-    "service.pressRelease.feature4": "Follow-up with media partners",
-
-    "service.mediaRelations.title": "Media Relations",
-    "service.mediaRelations.subtitle":
-      "Building strategic relationships with media partners for maximum exposure",
-    "service.mediaRelations.description":
-      "Our media relations service focuses on building and maintaining long-term relationships with journalists and media partners. We help you get quality and sustainable media coverage.",
-    "service.mediaRelations.features.title": "Service Features",
-    "service.mediaRelations.feature1": "500+ media partner database",
-    "service.mediaRelations.feature2": "Media monitoring & analysis",
-    "service.mediaRelations.feature3": "Press conference management",
-    "service.mediaRelations.feature4": "Crisis communication support",
-
-    "service.digitalMarketing.title": "Digital Marketing",
-    "service.digitalMarketing.subtitle":
-      "Integrated digital campaigns to increase brand awareness",
-    "service.digitalMarketing.description":
-      "Our digital marketing service combines content strategy, social media, and online publication to create effective campaigns. We help your brand have a strong presence in the digital world.",
-    "service.digitalMarketing.features.title": "Service Features",
-    "service.digitalMarketing.feature1": "Social media management",
-    "service.digitalMarketing.feature2": "Content marketing strategy",
-    "service.digitalMarketing.feature3": "Influencer collaboration",
-    "service.digitalMarketing.feature4": "Performance analytics",
-
-    "service.contentCreation.title": "Content Creation",
-    "service.contentCreation.subtitle":
-      "High-quality content creation for various media platforms",
-    "service.contentCreation.description":
-      "Our creative team produces engaging and relevant content for all your publication needs. From articles, infographics, to video content, we ensure every content aligns with your brand identity.",
-    "service.contentCreation.features.title": "Service Features",
-    "service.contentCreation.feature1": "Article & blog writing",
-    "service.contentCreation.feature2": "Infographic design",
-    "service.contentCreation.feature3": "Video content production",
-    "service.contentCreation.feature4": "Brand storytelling",
-
-    "pricing.title": "Service Packages",
-    "pricing.subtitle": "Choose the package that suits your business needs",
-    "pricing.basic": "Basic",
-    "pricing.professional": "Professional",
-    "pricing.enterprise": "Enterprise",
-    "pricing.month": "/month",
-    "pricing.contact": "Contact Us",
-    "pricing.getStarted": "Get Started",
-    "pricing.popular": "Most Popular",
+    // Testimonials Section
+    "testimonials.title": "What Are They Saying About Releases?",
+    "testimonials.subtitle":
+      "Hear the experiences of clients who have experienced our best service",
 
     // Hero Section
-    "hero.title": "Professional Media Publication for Your Brand",
+    "hero.title": "Make Your Business Visible in National Media",
     "hero.subtitle":
-      "Increase your business visibility and credibility with trusted media publication services from Rilisan.com",
-    "hero.cta": "Get Started",
-    "hero.contact": "Contact Us",
+      "With RILISAN, you can publish your business news quickly, reliably, and get it published in leading national media. From writing to broadcast, we take care of everything!",
+    "hero.cta": "Order Now!",
+    "hero.learn": "Learn More",
 
     // Services
-    "services.title": "Our Services",
+    "services.title": "Release Services",
     "services.subtitle":
       "Comprehensive media publication solutions for your business needs",
-    "services.press.title": "Press Release",
-    "services.press.desc":
-      "Distribution of press releases to national and international media",
-    "services.media.title": "Media Relations",
-    "services.media.desc":
-      "Building strategic relationships with media partners",
-    "services.digital.title": "Digital Marketing",
-    "services.digital.desc":
-      "Integrated digital campaigns for maximum exposure",
-    "services.content.title": "Content Creation",
-    "services.content.desc":
-      "High-quality content creation for various platforms",
+    "services.article.title": "Article Ads",
+    "services.article.desc":
+      "Advertisements in the form of news articles that appear on national media websites. Make your business visible and easily found on Google search engines",
+    "services.banner.title": "Digital Banner",
+    "services.banner.desc":
+      "Advertisements in the form of digital banners that appear on National media. Continuously increase your business awareness with banners to millions of audiences.",
+
+    "services.video.title": "Video on Warranty",
+    "services.video.desc":
+      "Be present on national media YouTube like a big brand! Your business ads are stitched and broadcast on national media group YouTube video channels. SMEs can too!",
 
     // Stats
     "stats.title": "Our Achievements",
     "stats.subtitle":
       "Numbers that prove our dedication to providing the best service",
-    "stats.clients": "Happy Clients",
+    "stats.clients": "Satisfied Clients",
     "stats.publications": "Successful Publications",
-    "stats.media": "Media Partners",
-    "stats.experience": "Years Experience",
+    "stats.media": "Media Partner",
+    "stats.experience": "Years of Experience",
 
     // About
-    "about.title": "Why Choose Rilisan.com?",
+    "about.title": "Reasons to Choose RILISAN",
     "about.subtitle":
-      "We are your trusted partner for all media publication needs",
-    "about.experience.title": "Trusted Experience",
-    "about.experience.desc": "More than 5 years serving various industries",
-    "about.network.title": "Wide Media Network",
-    "about.network.desc":
-      "Access to 500+ national and international media partners",
-    "about.results.title": "Measurable Results",
-    "about.results.desc": "Clear ROI with comprehensive reporting",
+      "We are a trusted partner for all your media publication needs",
+    "about.point1.title": "You Can Start with Just One Media",
+    "about.point1.desc": "No need for a package right away Big",
+    "about.point2.title": "Access to Dozens of Leading National Media",
+    "about.point2.desc":
+      "From Kompas, Tribun, to niche industry media—we have direct connections and a publication system.",
+    "about.point3.title": "All Events Can Be Handled",
+    "about.point3.desc":
+      "Have an event? Launching a new feature? Launching a product? Or do you want to get a blue tick to increase public trust in your brand? We can do it all!",
+    "about.point4.title": "Fast Process",
+    "about.point4.desc":
+      "Going live can take a matter of days. You'll get official proof of broadcast and can be monitored.",
+    "about.point5.title": "Stronger Digital Footprint",
+    "about.point5.desc":
+      "We can strengthen your business's digital footprint. Make your brand easier to find and trust for potential clients.",
 
     // Contact
-    "contact.title": "Ready to Boost Your Brand Visibility?",
-    "contact.subtitle": "Contact us now for a free consultation",
-    "contact.cta": "Contact Us",
+    "contact.title": "Ready to Exist in National Media?",
+    "contact.subtitle":
+      "Consultation Get a free consultation with the RILISAN team and get the right media publication strategy for your UMKM.",
+
+    "contact.cta": "Contact Us Now",
     "contact.email": "Email",
     "contact.phone": "Phone",
     "contact.address": "Address",
-    "contact.hero.title": "Contact Us",
-    "contact.hero.subtitle": "Free consultation for your publication needs",
+
+    "contact.questions.title": "Frequently Asked Questions",
+    "contact.questions.one": "How long does the publication process take?",
+    "contact.questions.descone":
+      "The publication process usually takes 3-7 business days depending on the package selected.",
+    "contact.questions.two": "Is there a guarantee?",
+    "contact.questions.desctwo":
+      "Yes, we provide a guarantee in accordance with applicable terms and conditions.",
+    "contact.questions.three": "How do I pay?",
+    "contact.questions.descthree":
+      "Payment can be made via bank transfer or available payment gateways.",
 
     // Footer
     "footer.tagline": "Trusted partner for professional media publication",
@@ -291,9 +227,9 @@ const translations = {
     "footer.company": "Company",
     "footer.contact": "Contact",
     "footer.about": "About Us",
-    "footer.warranty": "Warranty Terms",
-    "footer.terms": "Terms of Service",
-    "footer.privacy": "Privacy Policy",
+    "footer.team": "Team",
+    "footer.career": "Career",
+    "footer.blog": "Blog",
     "footer.rights": "All Rights Reserved",
 
     // Scroll to top

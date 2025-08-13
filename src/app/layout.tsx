@@ -2,8 +2,8 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Inter, Urbanist } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "../components/theme-provider";
-import { LanguageProvider } from "../components/language-provider";
+import { ThemeProvider } from "@/src/components/theme-provider";
+import { LanguageProvider } from "@/src/components/language-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Layanan publikasi media profesional untuk meningkatkan visibilitas brand Anda di berbagai platform media.",
   keywords:
     "publikasi media, press release, media relations, digital marketing",
-  generator: "v0.dev",
+  generator: "v0.app",
 };
 
 export default function RootLayout({

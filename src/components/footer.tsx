@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/src/components/language-provider";
 import {
   Mail,
   Phone,
@@ -10,7 +11,6 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-import { useLanguage } from "./language-provider";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br w-full from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fillRule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fillOpacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
@@ -87,16 +87,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-gray-400 font-body">
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                Press Release
+                {t("services.article.title")}
               </li>
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                Media Relations
+                {t("services.banner.title")}
               </li>
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                Digital Marketing
-              </li>
-              <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                Content Creation
+                {t("services.video.title")}
               </li>
             </ul>
           </motion.div>
@@ -113,16 +110,16 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-gray-400 font-body">
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                {t("footer.about")}
+                {t("nav.home")}
               </li>
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                {t("footer.warranty")}
+                {t("nav.services")}
               </li>
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                {t("footer.terms")}
+                {t("nav.about")}
               </li>
               <li className="hover:text-primary-custom transition-colors cursor-pointer">
-                {t("footer.privacy")}
+                {t("nav.contact")}
               </li>
             </ul>
           </motion.div>
@@ -140,15 +137,17 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-gray-400 font-body">
                 <Mail className="h-4 w-4 text-primary-custom" />
-                <span>hello@rilisan.com</span>
+                <span>paramamedianetwork@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400 font-body">
                 <Phone className="h-4 w-4 text-primary-custom" />
-                <span>+62 21 1234 5678</span>
+                <span>+62 812 250 52 380</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400 font-body">
-                <MapPin className="h-4 w-4 text-primary-custom" />
-                <span>Jakarta, Indonesia</span>
+                <MapPin className="h-4 w-4 md:h-7 md:w-7 text-primary-custom" />
+                <span>
+                  EightyEight@Kasablanka Tower A, Lt.10E, Jakarta, Indonesia
+                </span>
               </div>
             </div>
           </motion.div>
@@ -164,7 +163,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 font-body text-center md:text-left">
-              &copy; 2025 Rilisan.com. {t("footer.rights")}.
+              &copy; 2024 Rilisan.com. {t("footer.rights")}.
             </p>
             <div className="flex space-x-6 text-sm text-gray-400 font-body">
               <a
@@ -179,12 +178,12 @@ export default function Footer() {
               >
                 Terms of Service
               </a>
-              {/* <a
+              <a
                 href="#"
                 className="hover:text-primary-custom transition-colors"
               >
                 Cookie Policy
-              </a> */}
+              </a>
             </div>
           </div>
         </motion.div>

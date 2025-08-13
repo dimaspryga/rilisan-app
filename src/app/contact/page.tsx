@@ -15,9 +15,6 @@ import {
   CardTitle,
 } from "@/src/components/ui/card";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
-import Header from "@/src/components/header";
-import Footer from "@/src/components/footer";
-import ScrollToTop from "@/src/components/scroll-to-top";
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -74,7 +71,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-br from-primary-custom/10 to-button-custom/10">
@@ -319,8 +315,6 @@ export default function ContactPage() {
           </div>
         </section>
       </div>
-      <Footer />
-      <ScrollToTop />
     </div>
   );
 }
