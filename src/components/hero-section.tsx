@@ -28,7 +28,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-gray-50 pt-28 pb-12 md:pt-32 lg:py-48"
+      className="relative flex min-h-screen mx-auto w-full items-center justify-center overflow-hidden bg-gray-50 pt-28 pb-12 md:pt-32 lg:py-48"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-custom/5 via-transparent to-button-custom/5" />
