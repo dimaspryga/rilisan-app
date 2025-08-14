@@ -59,10 +59,10 @@ export default function AboutSection() {
             className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6"
           >
             <div>
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold font-heading mb-2 sm:mb-3">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-heading mb-2 sm:mb-3">
                 {t("about.title")}
               </h2>
-              <p className="text-xs sm:text-sm md:text-base text-muted-foreground font-body">{t("about.subtitle")}</p>
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground font-body">{t("about.subtitle")}</p>
             </div>
 
             <div className="space-y-2 sm:space-y-3 md:space-y-4">
@@ -81,10 +81,10 @@ export default function AboutSection() {
                     <feature.icon className={`h-3 sm:h-4 md:h-5 w-3 sm:w-4 md:w-5 ${feature.color}`} />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold font-heading mb-1">
+                    <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold font-heading mb-1">
                       {feature.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-muted-foreground font-body leading-relaxed">
+                    <p className="text-sm sm:text-base text-muted-foreground font-body leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -113,13 +113,13 @@ export default function AboutSection() {
               >
                 <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-primary-custom/10 to-primary-custom/5">
                   <div className="text-sm sm:text-base md:text-lg mb-1">📊</div>
-                  <h4 className="font-semibold font-heading text-xs sm:text-sm">Analytics</h4>
-                  <p className="text-xs text-muted-foreground font-body">Real-time insights</p>
+                  <h4 className="font-semibold font-heading text-sm sm:text-base">Analytics</h4>
+                  <p className="text-sm text-muted-foreground font-body">Real-time insights</p>
                 </Card>
                 <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-blue-500/10 to-blue-500/5">
                   <div className="text-sm sm:text-base md:text-lg mb-1">🎯</div>
-                  <h4 className="font-semibold font-heading text-xs sm:text-sm">Targeting</h4>
-                  <p className="text-xs text-muted-foreground font-body">Precise audience</p>
+                  <h4 className="font-semibold font-heading text-sm sm:text-base">Targeting</h4>
+                  <p className="text-sm text-muted-foreground font-body">Precise audience</p>
                 </Card>
               </motion.div>
               <motion.div
@@ -134,13 +134,13 @@ export default function AboutSection() {
               >
                 <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-button-custom/10 to-red-500/5">
                   <div className="text-sm sm:text-base md:text-lg mb-1">🚀</div>
-                  <h4 className="font-semibold font-heading text-xs sm:text-sm">Growth</h4>
-                  <p className="text-xs text-muted-foreground font-body">Rapid expansion</p>
+                  <h4 className="font-semibold font-heading text-sm sm:text-base">Growth</h4>
+                  <p className="text-sm text-muted-foreground font-body">Rapid expansion</p>
                 </Card>
                 <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-purple-500/10 to-purple-500/5">
                   <div className="text-sm sm:text-base md:text-lg mb-1">💡</div>
-                  <h4 className="font-semibold font-heading text-xs sm:text-sm">Innovation</h4>
-                  <p className="text-xs text-muted-foreground font-body">Creative solutions</p>
+                  <h4 className="font-semibold font-heading text-sm sm:text-base">Innovation</h4>
+                  <p className="text-sm text-muted-foreground font-body">Creative solutions</p>
                 </Card>
               </motion.div>
             </div>

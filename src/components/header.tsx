@@ -64,25 +64,25 @@ export default function Header() {
         }`}
       >
         <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 overflow-x-hidden">
-          <div className="flex items-center justify-between h-12 sm:h-14 md:h-16 lg:h-20">
+          <div className="flex items-center justify-between h-16 sm:h-16 md:h-18 lg:h-20">
             {/* Logo */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="flex items-center space-x-1.5 sm:space-x-2 flex-shrink-0"
+              className="flex items-center space-x-2 sm:space-x-2 flex-shrink-0"
             >
               <button
                 onClick={() => handleNavClick("#home")}
-                className="flex items-center space-x-1.5 sm:space-x-2 cursor-pointer"
+                className="flex items-center space-x-2 sm:space-x-2 cursor-pointer"
               >
                 <div className="relative">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 bg-primary-custom to-button-custom rounded-lg flex items-center justify-center shadow-lg">
-                    <span className="text-white font-bold text-xs sm:text-sm md:text-base font-heading">R</span>
+                  <div className="w-8 h-8 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 bg-primary-custom to-button-custom rounded-lg flex items-center justify-center shadow-lg">
+                    <span className="text-white font-bold text-sm sm:text-sm md:text-base font-heading">R</span>
                   </div>
                 </div>
                 <div className="min-w-0">
-                  <span className="text-xs sm:text-base md:text-lg lg:text-xl font-bold font-heading text-primary-custom truncate block">
+                  <span className="text-base sm:text-base md:text-lg lg:text-xl font-bold font-heading text-primary-custom truncate block">
                     Rilisan.com
                   </span>
                   <div className="text-xs text-muted-foreground font-body hidden sm:block">Media Publication</div>
@@ -118,9 +118,9 @@ export default function Header() {
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full hover:bg-primary-custom/10 cursor-pointer focus:ring-2 focus:ring-primary-custom/20"
+                    className="w-8 h-8 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full hover:bg-primary-custom/10 cursor-pointer focus:ring-2 focus:ring-primary-custom/20"
                   >
-                    <Globe className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <Globe className="h-4 w-4 sm:h-4 sm:w-4" />
                     <span className="sr-only">Toggle language</span>
                   </Button>
                 </DropdownMenuTrigger>
@@ -151,13 +151,13 @@ export default function Header() {
               <Button
                 variant="ghost"
                 size="sm"
-                className="lg:hidden w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full hover:bg-primary-custom/10 cursor-pointer focus:ring-2 focus:ring-primary-custom/20"
+                className="lg:hidden w-8 h-8 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full hover:bg-primary-custom/10 cursor-pointer focus:ring-2 focus:ring-primary-custom/20"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 {isMobileMenuOpen ? (
-                  <X className="h-3 w-3 sm:h-4 sm:w-4" />
+                  <X className="h-4 w-4 sm:h-4 sm:w-4" />
                 ) : (
-                  <Menu className="h-3 w-3 sm:h-4 sm:w-4" />
+                  <Menu className="h-4 w-4 sm:h-4 sm:w-4" />
                 )}
               </Button>
             </div>
@@ -181,7 +181,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-12 sm:top-14 md:top-16 lg:top-20 left-0 right-0 mx-3 sm:mx-4 lg:mx-8 bg-background/95 backdrop-blur-md border border-border/50 rounded-lg shadow-xl overflow-hidden"
+            className="absolute top-16 sm:top-16 md:top-18 lg:top-20 left-0 right-0 mx-3 sm:mx-4 lg:mx-8 bg-background/95 backdrop-blur-md border border-border/50 rounded-lg shadow-xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="py-2 sm:py-3 max-h-[calc(100vh-8rem)] overflow-y-auto">
