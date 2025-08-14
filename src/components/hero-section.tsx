@@ -28,12 +28,12 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-5 md:pt-20"
+      className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-gray-50 pt-28 pb-12 md:pt-32 lg:py-48"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-custom/5 via-transparent to-button-custom/5" />
-      <div className="absolute top-10 md:top-20 left-5 md:left-10 w-48 md:w-72 h-48 md:h-72 bg-primary-custom/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-10 md:bottom-20 right-5 md:right-10 w-64 md:w-96 h-64 md:h-96 bg-button-custom/10 rounded-full blur-3xl" />
+      <div className="absolute top-20 left-10 h-72 w-72 bg-primary-custom/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 right-10 h-96 w-96 bg-button-custom/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
