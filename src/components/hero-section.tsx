@@ -1,54 +1,54 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import { Button } from "@/src/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
-import { useLanguage } from "@/src/components/language-provider";
-import Image from "next/image";
+import { motion } from "framer-motion"
+import { Button } from "@/src/components/ui/button"
+import { ArrowRight, Play } from "lucide-react"
+import { useLanguage } from "@/src/components/language-provider"
+import Image from "next/image"
 
 export default function HeroSection() {
-  const { t } = useLanguage();
+  const { t } = useLanguage()
 
   const scrollToServices = () => {
-    const servicesSection = document.querySelector("#services");
+    const servicesSection = document.querySelector("#services")
     if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: "smooth" });
+      servicesSection.scrollIntoView({ behavior: "smooth" })
     }
-  };
+  }
 
   const openWhatsApp = () => {
-    const phoneNumber = "6281225052380"; // Replace with actual WhatsApp number
+    const phoneNumber = "6281225052380" // Replace with actual WhatsApp number
     const message = encodeURIComponent(
-      "Halo, saya tertarik dengan layanan publikasi media Rilisan.com. Bisakah saya mendapatkan informasi lebih lanjut?"
-    );
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(whatsappUrl, "_blank");
-  };
+      "Halo, saya tertarik dengan layanan publikasi media Rilisan.com. Bisakah saya mendapatkan informasi lebih lanjut?",
+    )
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
+    window.open(whatsappUrl, "_blank")
+  }
 
   return (
     <section
       id="home"
-      className="relative flex min-h-screen mx-auto w-full items-center justify-center overflow-hidden bg-gray-50 pt-28 pb-12 md:pt-32 lg:py-48"
+      className="relative w-full min-h-screen flex items-center justify-center bg-gray-50 pt-12 pb-6 sm:pt-16 sm:pb-8 md:pt-20 md:pb-12 lg:pt-24 lg:pb-16"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-custom/5 via-transparent to-button-custom/5" />
-      <div className="absolute top-20 left-10 h-72 w-72 bg-primary-custom/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 h-96 w-96 bg-button-custom/10 rounded-full blur-3xl" />
+      <div className="absolute top-2 sm:top-5 lg:top-10 left-1 sm:left-2 lg:left-5 h-20 w-20 sm:h-32 sm:w-32 lg:h-48 lg:w-48 bg-primary-custom/10 rounded-full blur-2xl sm:blur-3xl" />
+      <div className="absolute bottom-2 sm:bottom-5 lg:bottom-10 right-1 sm:right-2 lg:right-5 h-24 w-24 sm:h-40 sm:w-40 lg:h-64 lg:w-64 bg-button-custom/10 rounded-full blur-2xl sm:blur-3xl" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6 md:space-y-8 text-center lg:text-left"
+            className="space-y-3 sm:space-y-4 lg:space-y-6 text-center lg:text-left"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="inline-flex items-center px-3 md:px-4 py-2 bg-primary-custom/10 rounded-full text-primary-custom text-xs md:text-sm font-medium"
+              className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 bg-primary-custom/10 rounded-full text-primary-custom text-xs sm:text-sm font-medium"
             >
               ✨ Media Publication Expert
             </motion.div>
@@ -57,7 +57,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold font-heading leading-tight"
             >
               {t("hero.title")}
             </motion.h1>
@@ -66,7 +66,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-base md:text-lg text-muted-foreground font-body max-w-lg mx-auto lg:mx-0"
+              className="text-xs sm:text-sm lg:text-base text-muted-foreground font-body max-w-lg mx-auto lg:mx-0"
             >
               {t("hero.subtitle")}
             </motion.p>
@@ -75,23 +75,23 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start"
             >
               <Button
-                size="lg"
+                size="default"
                 onClick={openWhatsApp}
-                className="bg-button-custom hover:bg-button-custom/90 text-white font-body group w-full sm:w-auto cursor-pointer"
+                className="bg-button-custom hover:bg-button-custom/90 text-white font-body group w-full sm:w-auto cursor-pointer text-xs sm:text-sm px-3 py-2 sm:px-4 sm:py-2.5"
               >
                 {t("hero.cta")}
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-1.5 h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
-                size="lg"
+                size="default"
                 variant="outline"
                 onClick={scrollToServices}
-                className="border-primary-custom text-primary-custom hover:bg-primary-custom hover:text-white font-body group bg-transparent w-full sm:w-auto cursor-pointer"
+                className="border-primary-custom text-primary-custom hover:bg-primary-custom hover:text-white font-body group bg-transparent w-full sm:w-auto cursor-pointer text-xs sm:text-sm px-3 py-2 sm:px-4 sm:py-2.5"
               >
-                <Play className="mr-2 h-4 w-4" />
+                <Play className="mr-1.5 h-3 w-3 sm:h-4 sm:w-4" />
                 {t("hero.learn")}
               </Button>
             </motion.div>
@@ -102,56 +102,28 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative mt-8 lg:mt-0"
+            className="relative mt-4 lg:mt-0 w-full"
           >
-            <div className="relative w-full h-64 sm:h-80 md:h-96 shadow-2xl bg-gradient-to-br from-primary-custom to-button-custom rounded-2xl overflow-hidden mx-auto max-w-md lg:max-w-none">
+            <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 shadow-xl bg-gradient-to-br from-primary-custom to-button-custom rounded-lg sm:rounded-xl overflow-hidden">
               <div className="absolute inset-0 bg-black/20" />
               <Image
                 src="./assets/hero-section/hero-1.png"
                 alt="Hero Image"
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
+                priority
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-slate-500/80 px-4">
-                  <h3 className="text-lg md:text-xl font-bold font-heading">
-                    Rilisan.com
-                  </h3>
-                  <p className="text-slate-500/80 font-body text-sm md:text-base">
-                    Media Publication Service
-                  </p>
+                <div className="text-center text-white px-2 sm:px-3">
+                  <h3 className="text-sm sm:text-base lg:text-lg font-bold font-heading">Rilisan.com</h3>
+                  <p className="text-white/80 font-body text-xs sm:text-sm">Media Publication Service</p>
                 </div>
               </div>
             </div>
-
-            {/* Floating Elements */}
-            {/* <motion.div
-              animate={{ y: [-10, 10, -10] }}
-              transition={{
-                duration: 3,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "easeInOut",
-              }}
-              className="absolute -top-2 md:-top-4 -right-2 md:-right-4 w-12 md:w-16 h-12 md:h-16 bg-transparent rounded-full flex items-center justify-center text-white text-lg md:text-xl"
-            >
-              📰
-            </motion.div>
-            <motion.div
-              animate={{ y: [10, -10, 10] }}
-              transition={{
-                duration: 3,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "easeInOut",
-                delay: 1.5,
-              }}
-              className="absolute -bottom-2 md:-bottom-4 -left-2 md:-left-4 w-10 md:w-12 h-10 md:h-12 bg-transparent rounded-full flex items-center justify-center text-white text-sm md:text-base"
-            >
-              📺
-            </motion.div> */}
           </motion.div>
         </div>
       </div>
     </section>
-  );
+  )
 }

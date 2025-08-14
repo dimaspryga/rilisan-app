@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import { Card } from "@/src/components/ui/card";
-import { Play, Network, Calendar, Clock, TrendingUp } from "lucide-react";
-import { useLanguage } from "@/src/components/language-provider";
+import { motion } from "framer-motion"
+import { Card } from "@/src/components/ui/card"
+import { Play, Network, Calendar, Clock, TrendingUp } from "lucide-react"
+import { useLanguage } from "@/src/components/language-provider"
 
 export default function AboutSection() {
-  const { t } = useLanguage();
+  const { t } = useLanguage()
 
   const features = [
     {
@@ -44,30 +44,28 @@ export default function AboutSection() {
       color: "text-button-custom",
       bgColor: "bg-red-500/10",
     },
-  ];
+  ]
 
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-20">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
+    <section id="about" className="py-6 sm:py-8 md:py-12 lg:py-16 overflow-x-hidden">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-4 sm:space-y-6 md:space-y-8"
+            className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6"
           >
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-3 sm:mb-4">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold font-heading mb-2 sm:mb-3">
                 {t("about.title")}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground font-body">
-                {t("about.subtitle")}
-              </p>
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground font-body">{t("about.subtitle")}</p>
             </div>
 
-            <div className="space-y-3 sm:space-y-4 md:space-y-6">
+            <div className="space-y-2 sm:space-y-3 md:space-y-4">
               {features.map((feature, index) => (
                 <motion.div
                   key={feature.title}
@@ -75,20 +73,18 @@ export default function AboutSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start space-x-3 md:space-x-4"
+                  className="flex items-start space-x-2 sm:space-x-3"
                 >
                   <div
-                    className={`w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 ${feature.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}
+                    className={`w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10 ${feature.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}
                   >
-                    <feature.icon
-                      className={`h-4 sm:h-5 md:h-6 w-4 sm:w-5 md:w-6 ${feature.color}`}
-                    />
+                    <feature.icon className={`h-3 sm:h-4 md:h-5 w-3 sm:w-4 md:w-5 ${feature.color}`} />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-base sm:text-lg md:text-xl font-semibold font-heading mb-1 md:mb-2">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold font-heading mb-1">
                       {feature.title}
                     </h3>
-                    <p className="text-sm sm:text-base text-muted-foreground font-body leading-relaxed">
+                    <p className="text-xs sm:text-sm text-muted-foreground font-body leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -103,9 +99,9 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative mt-6 sm:mt-8 lg:mt-0"
+            className="relative mt-3 sm:mt-4 lg:mt-0"
           >
-            <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4">
+            <div className="grid grid-cols-2 gap-1.5 sm:gap-2 md:gap-3">
               <motion.div
                 animate={{ y: [-5, 5, -5] }}
                 transition={{
@@ -113,29 +109,17 @@ export default function AboutSection() {
                   repeat: Number.POSITIVE_INFINITY,
                   ease: "easeInOut",
                 }}
-                className="space-y-2 sm:space-y-3 md:space-y-4"
+                className="space-y-1.5 sm:space-y-2 md:space-y-3"
               >
-                <Card className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-primary-custom/10 to-primary-custom/5">
-                  <div className="text-lg sm:text-xl md:text-2xl mb-1 sm:mb-2">
-                    📊
-                  </div>
-                  <h4 className="font-semibold font-heading text-xs sm:text-sm md:text-base">
-                    Analytics
-                  </h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground font-body">
-                    Real-time insights
-                  </p>
+                <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-primary-custom/10 to-primary-custom/5">
+                  <div className="text-sm sm:text-base md:text-lg mb-1">📊</div>
+                  <h4 className="font-semibold font-heading text-xs sm:text-sm">Analytics</h4>
+                  <p className="text-xs text-muted-foreground font-body">Real-time insights</p>
                 </Card>
-                <Card className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-blue-500/10 to-blue-500/5">
-                  <div className="text-lg sm:text-xl md:text-2xl mb-1 sm:mb-2">
-                    🎯
-                  </div>
-                  <h4 className="font-semibold font-heading text-xs sm:text-sm md:text-base">
-                    Targeting
-                  </h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground font-body">
-                    Precise audience
-                  </p>
+                <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-blue-500/10 to-blue-500/5">
+                  <div className="text-sm sm:text-base md:text-lg mb-1">🎯</div>
+                  <h4 className="font-semibold font-heading text-xs sm:text-sm">Targeting</h4>
+                  <p className="text-xs text-muted-foreground font-body">Precise audience</p>
                 </Card>
               </motion.div>
               <motion.div
@@ -146,29 +130,17 @@ export default function AboutSection() {
                   ease: "easeInOut",
                   delay: 2,
                 }}
-                className="space-y-2 sm:space-y-3 md:space-y-4 mt-4 sm:mt-6 md:mt-8"
+                className="space-y-1.5 sm:space-y-2 md:space-y-3 mt-2 sm:mt-3 md:mt-4"
               >
-                <Card className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-button-custom/10 to-red-500/5">
-                  <div className="text-lg sm:text-xl md:text-2xl mb-1 sm:mb-2">
-                    🚀
-                  </div>
-                  <h4 className="font-semibold font-heading text-xs sm:text-sm md:text-base">
-                    Growth
-                  </h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground font-body">
-                    Rapid expansion
-                  </p>
+                <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-button-custom/10 to-red-500/5">
+                  <div className="text-sm sm:text-base md:text-lg mb-1">🚀</div>
+                  <h4 className="font-semibold font-heading text-xs sm:text-sm">Growth</h4>
+                  <p className="text-xs text-muted-foreground font-body">Rapid expansion</p>
                 </Card>
-                <Card className="p-3 sm:p-4 md:p-6 bg-gradient-to-br from-purple-500/10 to-purple-500/5">
-                  <div className="text-lg sm:text-xl md:text-2xl mb-1 sm:mb-2">
-                    💡
-                  </div>
-                  <h4 className="font-semibold font-heading text-xs sm:text-sm md:text-base">
-                    Innovation
-                  </h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground font-body">
-                    Creative solutions
-                  </p>
+                <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-purple-500/10 to-purple-500/5">
+                  <div className="text-sm sm:text-base md:text-lg mb-1">💡</div>
+                  <h4 className="font-semibold font-heading text-xs sm:text-sm">Innovation</h4>
+                  <p className="text-xs text-muted-foreground font-body">Creative solutions</p>
                 </Card>
               </motion.div>
             </div>
@@ -176,5 +148,5 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
