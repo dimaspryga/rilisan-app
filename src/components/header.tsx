@@ -1,57 +1,57 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import { Button } from "@/src/components/ui/button"
-import { Menu, X, Globe } from "lucide-react"
-import { useLanguage } from "@/src/components/language-provider"
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/src/components/ui/button";
+import { Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "@/src/components/language-provider";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/src/components/ui/dropdown-menu"
+} from "@/src/components/ui/dropdown-menu";
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const { language, setLanguage, t } = useLanguage()
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "unset"
+      document.body.style.overflow = "unset";
     }
 
     // Cleanup on unmount
     return () => {
-      document.body.style.overflow = "unset"
-    }
-  }, [isMobileMenuOpen])
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobileMenuOpen]);
 
   const navItems = [
     { key: "nav.home", href: "#home" },
     { key: "nav.services", href: "#services" },
     { key: "nav.about", href: "#about" },
     { key: "nav.contact", href: "#contact" },
-  ]
+  ];
 
   const handleNavClick = (href: string) => {
-    const element = document.querySelector(href)
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMobileMenuOpen(false)
-  }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <>
@@ -60,7 +60,9 @@ export default function Header() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border/50" : "bg-transparent"
+          isScrolled
+            ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border/50"
+            : "bg-transparent"
         }`}
       >
         <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 overflow-x-hidden">
@@ -78,14 +80,18 @@ export default function Header() {
               >
                 <div className="relative">
                   <div className="w-8 h-8 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 bg-primary-custom to-button-custom rounded-lg flex items-center justify-center shadow-lg">
-                    <span className="text-white font-bold text-sm sm:text-sm md:text-base font-heading">R</span>
+                    <span className="text-white font-bold text-sm sm:text-sm md:text-base font-heading">
+                      R
+                    </span>
                   </div>
                 </div>
                 <div className="min-w-0">
                   <span className="text-base sm:text-base md:text-lg lg:text-xl font-bold font-heading text-primary-custom truncate block">
                     Rilisan.com
                   </span>
-                  <div className="text-xs text-muted-foreground font-body hidden sm:block">Media Publication</div>
+                  <div className="text-xs text-muted-foreground font-body hidden sm:block">
+                    Media Publication
+                  </div>
                 </div>
               </button>
             </motion.div>
@@ -131,7 +137,9 @@ export default function Header() {
                   <DropdownMenuItem
                     onClick={() => setLanguage("id")}
                     className={`cursor-pointer font-body text-xs sm:text-sm hover:bg-primary-custom/10 hover:text-primary-custom transition-colors ${
-                      language === "id" ? "bg-primary-custom/10 text-primary-custom" : ""
+                      language === "id"
+                        ? "bg-primary-custom/10 text-primary-custom"
+                        : ""
                     }`}
                   >
                     🇮🇩 Indonesia
@@ -139,7 +147,9 @@ export default function Header() {
                   <DropdownMenuItem
                     onClick={() => setLanguage("en")}
                     className={`cursor-pointer font-body text-xs sm:text-sm hover:bg-primary-custom/10 hover:text-primary-custom transition-colors ${
-                      language === "en" ? "bg-primary-custom/10 text-primary-custom" : ""
+                      language === "en"
+                        ? "bg-primary-custom/10 text-primary-custom"
+                        : ""
                     }`}
                   >
                     🇺🇸 English
@@ -205,5 +215,5 @@ export default function Header() {
         </motion.div>
       )}
     </>
-  )
+  );
 }

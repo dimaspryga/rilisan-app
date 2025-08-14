@@ -1,34 +1,34 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/src/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
-import { useLanguage } from "@/src/components/language-provider"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { Button } from "@/src/components/ui/button";
+import { ArrowRight, Play } from "lucide-react";
+import { useLanguage } from "@/src/components/language-provider";
+import Image from "next/image";
 
 export default function HeroSection() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   const scrollToServices = () => {
-    const servicesSection = document.querySelector("#services")
+    const servicesSection = document.querySelector("#services");
     if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: "smooth" })
+      servicesSection.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   const openWhatsApp = () => {
-    const phoneNumber = "6281225052380" // Replace with actual WhatsApp number
+    const phoneNumber = "6281225052380"; // Replace with actual WhatsApp number
     const message = encodeURIComponent(
-      "Halo, saya tertarik dengan layanan publikasi media Rilisan.com. Bisakah saya mendapatkan informasi lebih lanjut?",
-    )
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
-    window.open(whatsappUrl, "_blank")
-  }
+      "Halo, saya tertarik dengan layanan publikasi media Rilisan.com. Bisakah saya mendapatkan informasi lebih lanjut?"
+    );
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen flex items-center justify-center bg-gray-50 pt-20 pb-6 sm:pt-20 sm:pb-8 md:pt-24 md:pb-12 lg:pt-28 lg:pb-16"
+      className="relative w-full min-h-screen flex items-center justify-center bg-gray-50 pt-8 pb-6 sm:pt-8 sm:pb-8 md:pt-24 md:pb-12 lg:pt-28 lg:pb-16"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-custom/5 via-transparent to-button-custom/5" />
@@ -116,8 +116,12 @@ export default function HeroSection() {
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white px-2 sm:px-3">
-                  <h3 className="text-base sm:text-lg lg:text-xl font-bold font-heading">Rilisan.com</h3>
-                  <p className="text-white/80 font-body text-sm sm:text-base">Media Publication Service</p>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold font-heading">
+                    Rilisan.com
+                  </h3>
+                  <p className="text-white/80 font-body text-sm sm:text-base">
+                    Media Publication Service
+                  </p>
                 </div>
               </div>
             </div>
@@ -125,5 +129,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
