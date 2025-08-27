@@ -1,12 +1,18 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/src/components/ui/card"
-import { FileText, Monitor, Video } from "lucide-react"
-import { useLanguage } from "@/src/components/language-provider"
+import { motion } from "framer-motion";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/src/components/ui/card";
+import { FileText, Monitor, Video } from "lucide-react";
+import { useLanguage } from "@/src/components/language-provider";
 
 export default function ServicesSection() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   const services = [
     {
@@ -30,10 +36,13 @@ export default function ServicesSection() {
       color: "text-button-custom",
       bgColor: "bg-red-500/10",
     },
-  ]
+  ];
 
   return (
-    <section id="services" className="py-6 sm:py-8 md:py-12 lg:py-16 bg-secondary/30 overflow-x-hidden">
+    <section
+      id="services"
+      className="py-6 sm:py-8 md:py-12 lg:py-16 bg-secondary/30 overflow-x-hidden"
+    >
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,9 +75,11 @@ export default function ServicesSection() {
                   <div
                     className={`w-8 sm:w-10 md:w-12 lg:w-14 h-8 sm:h-10 md:h-12 lg:h-14 ${service.bgColor} rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3`}
                   >
-                    <service.icon className={`h-4 sm:h-5 md:h-6 lg:h-7 w-4 sm:w-5 md:w-6 lg:w-7 ${service.color}`} />
+                    <service.icon
+                      className={`h-4 sm:h-5 md:h-6 lg:h-7 w-4 sm:w-5 md:w-6 lg:w-7 ${service.color}`}
+                    />
                   </div>
-                  <CardTitle className="font-heading text-sm sm:text-base md:text-lg lg:text-xl">
+                  <CardTitle className="font-heading text-md sm:text-base md:text-lg lg:text-xl">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
@@ -83,5 +94,5 @@ export default function ServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
