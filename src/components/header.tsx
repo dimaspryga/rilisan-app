@@ -126,7 +126,7 @@ export default function Header() {
                     size="sm"
                     className="w-8 h-8 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full hover:bg-primary-custom/10 cursor-pointer focus:ring-2 focus:ring-primary-custom/20"
                   >
-                    <Globe className="h-4 w-4 sm:h-4 sm:w-4" />
+                    <Globe className="h-4 w-4 sm:h-4 sm:w-4 text-primary-custom" />
                     <span className="sr-only">Toggle language</span>
                   </Button>
                 </DropdownMenuTrigger>
@@ -136,7 +136,7 @@ export default function Header() {
                 >
                   <DropdownMenuItem
                     onClick={() => setLanguage("id")}
-                    className={`cursor-pointer font-body text-xs sm:text-sm hover:bg-primary-custom/10 hover:text-primary-custom transition-colors ${
+                    className={`cursor-pointer font-body text-sm sm:text-base hover:bg-primary-custom/10 hover:text-primary-custom transition-colors ${
                       language === "id"
                         ? "bg-primary-custom/10 text-primary-custom"
                         : ""
@@ -146,7 +146,7 @@ export default function Header() {
                   </DropdownMenuItem>
                   <DropdownMenuItem
                     onClick={() => setLanguage("en")}
-                    className={`cursor-pointer font-body text-xs sm:text-sm hover:bg-primary-custom/10 hover:text-primary-custom transition-colors ${
+                    className={`cursor-pointer font-body text-sm sm:text-base hover:bg-primary-custom/10 hover:text-primary-custom transition-colors ${
                       language === "en"
                         ? "bg-primary-custom/10 text-primary-custom"
                         : ""
@@ -165,9 +165,9 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 {isMobileMenuOpen ? (
-                  <X className="h-4 w-4 sm:h-4 sm:w-4" />
+                  <X className="h-4 w-4 sm:h-4 sm:w-4 text-primary-custom" />
                 ) : (
-                  <Menu className="h-4 w-4 sm:h-4 sm:w-4" />
+                  <Menu className="h-4 w-4 sm:h-4 sm:w-4 text-primary-custom" />
                 )}
               </Button>
             </div>

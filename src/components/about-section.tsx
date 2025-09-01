@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card } from "@/src/components/ui/card"
-import { Play, Network, Calendar, Clock, TrendingUp } from "lucide-react"
-import { useLanguage } from "@/src/components/language-provider"
+import { motion } from "framer-motion";
+import { Card } from "@/src/components/ui/card";
+import { Play, Network, Calendar, Clock, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/src/components/language-provider";
 
 export default function AboutSection() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   const features = [
     {
@@ -44,10 +44,13 @@ export default function AboutSection() {
       color: "text-button-custom",
       bgColor: "bg-red-500/10",
     },
-  ]
+  ];
 
   return (
-    <section id="about" className="py-6 sm:py-8 md:py-12 lg:py-16 overflow-x-hidden">
+    <section
+      id="about"
+      className="py-6 sm:py-8 md:py-12 lg:py-16 overflow-x-hidden"
+    >
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-center">
           {/* Content */}
@@ -59,10 +62,12 @@ export default function AboutSection() {
             className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6"
           >
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-heading mb-2 sm:mb-3">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold font-heading mb-2 sm:mb-3">
                 {t("about.title")}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground font-body">{t("about.subtitle")}</p>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-body">
+                {t("about.subtitle")}
+              </p>
             </div>
 
             <div className="space-y-2 sm:space-y-3 md:space-y-4">
@@ -78,10 +83,12 @@ export default function AboutSection() {
                   <div
                     className={`w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10 ${feature.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}
                   >
-                    <feature.icon className={`h-3 sm:h-4 md:h-5 w-3 sm:w-4 md:w-5 ${feature.color}`} />
+                    <feature.icon
+                      className={`h-3 sm:h-4 md:h-5 w-3 sm:w-4 md:w-5 ${feature.color}`}
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold font-heading mb-1">
+                    <h3 className="text-lg sm:text-base md:text-lg lg:text-xl font-semibold font-heading mb-1">
                       {feature.title}
                     </h3>
                     <p className="text-sm sm:text-base text-muted-foreground font-body leading-relaxed">
@@ -113,13 +120,21 @@ export default function AboutSection() {
               >
                 <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-primary-custom/10 to-primary-custom/5">
                   <div className="text-sm sm:text-base md:text-lg mb-1">📊</div>
-                  <h4 className="font-semibold font-heading text-sm sm:text-base">Analytics</h4>
-                  <p className="text-sm text-muted-foreground font-body">Real-time insights</p>
+                  <h4 className="font-semibold font-heading text-sm sm:text-base">
+                    Analytics
+                  </h4>
+                  <p className="text-sm text-muted-foreground font-body">
+                    Real-time insights
+                  </p>
                 </Card>
                 <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-blue-500/10 to-blue-500/5">
                   <div className="text-sm sm:text-base md:text-lg mb-1">🎯</div>
-                  <h4 className="font-semibold font-heading text-sm sm:text-base">Targeting</h4>
-                  <p className="text-sm text-muted-foreground font-body">Precise audience</p>
+                  <h4 className="font-semibold font-heading text-sm sm:text-base">
+                    Targeting
+                  </h4>
+                  <p className="text-sm text-muted-foreground font-body">
+                    Precise audience
+                  </p>
                 </Card>
               </motion.div>
               <motion.div
@@ -134,13 +149,21 @@ export default function AboutSection() {
               >
                 <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-button-custom/10 to-red-500/5">
                   <div className="text-sm sm:text-base md:text-lg mb-1">🚀</div>
-                  <h4 className="font-semibold font-heading text-sm sm:text-base">Growth</h4>
-                  <p className="text-sm text-muted-foreground font-body">Rapid expansion</p>
+                  <h4 className="font-semibold font-heading text-sm sm:text-base">
+                    Growth
+                  </h4>
+                  <p className="text-sm text-muted-foreground font-body">
+                    Rapid expansion
+                  </p>
                 </Card>
                 <Card className="p-2 sm:p-3 md:p-4 bg-gradient-to-br from-purple-500/10 to-purple-500/5">
                   <div className="text-sm sm:text-base md:text-lg mb-1">💡</div>
-                  <h4 className="font-semibold font-heading text-sm sm:text-base">Innovation</h4>
-                  <p className="text-sm text-muted-foreground font-body">Creative solutions</p>
+                  <h4 className="font-semibold font-heading text-sm sm:text-base">
+                    Innovation
+                  </h4>
+                  <p className="text-sm text-muted-foreground font-body">
+                    Creative solutions
+                  </p>
                 </Card>
               </motion.div>
             </div>
@@ -148,5 +171,5 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

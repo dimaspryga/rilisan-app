@@ -35,10 +35,10 @@ export default function TrustedBrandsSection() {
           viewport={{ once: true }}
           className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-foreground mb-3 sm:mb-4 md:mb-6">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-foreground mb-3 sm:mb-4 md:mb-6">
             {t("brands.title")}
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground font-body max-w-4xl mx-auto leading-relaxed px-4">
+          <p className="text-md sm:text-base md:text-lg lg:text-xl text-muted-foreground font-body max-w-4xl mx-auto leading-relaxed px-4">
             {t("brands.subtitle")}
           </p>
         </motion.div>

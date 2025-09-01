@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Button } from "@/src/components/ui/button"
-import { useLanguage } from "@/src/components/language-provider"
-import Masonry from "react-masonry-css"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/src/components/ui/button";
+import { useLanguage } from "@/src/components/language-provider";
+import Masonry from "react-masonry-css";
 
 const newsImages = [
   {
@@ -79,13 +79,13 @@ const newsImages = [
     alt: "Tembus Pasar Ekspor, Bran Kacamata Asal Surabaya Ini Pasang Target Besar - investor.id",
     height: "h-52 sm:h-60 md:h-68",
   },
-]
+];
 
 export default function NewsExamplesSection() {
-  const { t } = useLanguage()
-  const [showAll, setShowAll] = useState(false)
+  const { t } = useLanguage();
+  const [showAll, setShowAll] = useState(false);
 
-  const displayedImages = showAll ? newsImages : newsImages.slice(0, 8)
+  const displayedImages = showAll ? newsImages : newsImages.slice(0, 8);
 
   const breakpointColumnsObj = {
     default: 4,
@@ -94,7 +94,7 @@ export default function NewsExamplesSection() {
     768: 2,
     640: 1,
     480: 1,
-  }
+  };
 
   return (
     <section className="py-6 sm:py-8 md:py-12 lg:py-16 bg-gradient-to-br from-background via-secondary-custom/20 to-background">
@@ -107,10 +107,10 @@ export default function NewsExamplesSection() {
           viewport={{ once: true }}
           className="text-center mb-6 sm:mb-8 md:mb-12"
         >
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold font-heading text-foreground mb-2 sm:mb-3 md:mb-4">
+          <h2 className="text-3xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold font-heading text-foreground mb-2 sm:mb-3 md:mb-4">
             {t("news.title")}
           </h2>
-          <p className="text-xs sm:text-sm md:text-base text-muted-foreground font-body max-w-3xl mx-auto">
+          <p className="text-md sm:text-sm md:text-base text-muted-foreground font-body max-w-3xl mx-auto">
             {t("news.subtitle")}
           </p>
         </motion.div>
@@ -150,7 +150,9 @@ export default function NewsExamplesSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
                   <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 text-white transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    <p className="text-xs sm:text-sm font-body font-medium line-clamp-3 leading-relaxed">{image.alt}</p>
+                    <p className="text-xs sm:text-sm font-body font-medium line-clamp-3 leading-relaxed">
+                      {image.alt}
+                    </p>
                     <div className="w-12 h-0.5 bg-primary-custom mt-2 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 delay-200" />
                   </div>
 
@@ -180,5 +182,5 @@ export default function NewsExamplesSection() {
         )}
       </div>
     </section>
-  )
+  );
 }

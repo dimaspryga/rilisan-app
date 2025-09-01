@@ -82,10 +82,10 @@ export default function StatsSection() {
           viewport={{ once: true }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-heading mb-4">
             {t("stats.title")}
           </h2>
-          <p className="text-base md:text-lg text-white/80 font-body max-w-2xl mx-auto px-4">
+          <p className="text-md md:text-xl text-white/80 font-body max-w-2xl mx-auto px-4">
             {t("stats.subtitle")}
           </p>
         </motion.div>

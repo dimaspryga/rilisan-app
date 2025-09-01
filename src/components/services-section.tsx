@@ -51,10 +51,10 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-12"
         >
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-heading mb-2 sm:mb-3 px-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold font-heading mb-2 sm:mb-3 px-2">
             {t("services.title")}
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-muted-foreground font-body max-w-2xl mx-auto px-2">
+          <p className="text-md sm:text-lg md:text-xl text-muted-foreground font-body max-w-2xl mx-auto px-2">
             {t("services.subtitle")}
           </p>
         </motion.div>
@@ -79,12 +79,12 @@ export default function ServicesSection() {
                       className={`h-4 sm:h-5 md:h-6 lg:h-7 w-4 sm:w-5 md:w-6 lg:w-7 ${service.color}`}
                     />
                   </div>
-                  <CardTitle className="font-heading text-md sm:text-base md:text-lg lg:text-xl">
+                  <CardTitle className="font-heading text-2xl sm:text-base md:text-lg lg:text-xl">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0 p-3 sm:p-4 md:p-5">
-                  <CardDescription className="text-center font-body text-sm sm:text-base leading-relaxed">
+                  <CardDescription className="text-center font-body text-md sm:text-base leading-relaxed">
                     {service.description}
                   </CardDescription>
                 </CardContent>

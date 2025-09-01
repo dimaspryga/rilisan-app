@@ -204,10 +204,10 @@ export default function MediaPartnersSection() {
           viewport={{ once: true }}
           className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
             {t("partners.title")}
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+          <p className="text-md font-body sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             {t("partners.subtitle")}
           </p>
         </motion.div>
